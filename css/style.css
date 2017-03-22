@@ -1,0 +1,258 @@
+body{
+	background-color: pink;
+}
+
+h1{
+	font-size: 300px;
+	color:	white;
+}
+
+@media (max-width: 1200px){
+	h1{
+		font-size: 100px;
+	}
+}
+
+/*if*/
+@media screen and (max-width: 800px){
+	body{
+		background-color : green;
+	}
+}
+
+@media (max-width: 500px){
+	body{
+		background-color: red;
+	}
+}
+
+.uno{
+	max-width: 800px;
+	margin: auto;
+}
+
+.uno article{
+	width: 50%;
+	float: left;
+	padding: 30px;
+	box-sizing: border-box;
+	color: white;
+}
+
+.solo_mobile{
+	display: none;
+}
+
+@media screen and (max-width: 800px){
+	.uno article{
+		float: none;
+		width: 100%
+	}
+
+	.solo_web{
+		display: none;
+	}
+
+	.solo_mobile{
+		display: inline;
+	}
+}
+
+/*
+
+Breakpoint:
+
+ de 320px para arriba se muestra nuestro sitio.
+
+*/
+
+.link{
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+	transition: 1s;
+}
+
+.link:hover{
+	background-color: red;
+	/* transform: scale(1); Tamano original*/
+	/*transform: scale(1.1); /*Tamano original 110% 
+	transform: rotate(90deg) scale(2.2);*/
+}
+/*
+@keyframes cambiarColor{
+	from{ background-color: red }
+	to {background-color: cyan;
+		transform: scale(0.2);}
+}*/
+.circulo{
+	width: 300px;
+	height: 300px;
+	background-color: red;
+	border-radius: 50%;
+	animation-name: cambiarColor;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+
+}
+/*
+@keyframes otraAnimacion{
+	0%{
+		background-color: orange;
+	}
+
+	25%{
+		background-color: green;
+		transform: scale(2,3);
+	}
+
+	50%{
+		background-color: blue;
+		transform: translate(100px);
+	}
+
+	75%{
+		background-color: transparent;
+		transform: scale(2,3);
+	}
+
+	100%{
+		transform: scale(2,3) rotate(90deg);
+		background-color: violet;
+	}
+
+}
+
+*/
+.circuloDos{
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+	border-radius: 50%;
+	animation-name: otraAnimacion;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+
+}
+/*
+@keyframes sentidoreloj{
+	0%{
+		transform: rotate(0deg);
+		transition: 1s;
+	}
+
+	25%{
+		transform: rotate(90deg);
+		transition: 1s;
+	}
+
+	50%{
+		transform: rotate(180deg);
+		transition: 1s;
+	}
+
+	75%{
+		transform: rotate(270deg);
+		transition: 1s;
+	}
+
+	100%{
+		transform: rotate(360deg);
+		transition: 1s;
+	}
+	
+
+}*/
+
+@keyframes sentidoreloj{
+	0%{
+		transform: rotate(0deg);
+
+	}
+
+	
+	100%{
+		transform: rotate(360deg);
+	}
+	
+
+}
+
+.sentidoReloj{
+
+	animation-name: sentidoreloj;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes contrasentidoreloj{
+
+	0%{
+		transform: rotate(360deg);
+	}
+
+	100%{
+		transform: rotate(0deg);
+
+	}
+
+	
+	
+
+}
+.contraSentidoReloj{
+	
+	animation-name: contrasentidoreloj;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+}
+
+.tuercaUno{
+	color: black;
+	font-size: 180px !important;
+	position: absolute;
+	top: 10px;
+
+}
+
+.tuercaDos{
+	color: black;
+	font-size: 110px !important;
+	position: absolute;
+	left: 180px;
+}
+
+.tuercaTres{
+	color: black;
+	font-size: 250px !important;
+	position: absolute;
+	left: 250px;
+}
+
+.tuercaCuatro{
+	color: black;
+	font-size: 70px !important;
+	position: absolute;
+	left: 150px;
+	top:100px;
+}
+
+.tuercaCinco{
+	color: black;
+	font-size: 90px !important;
+	position: absolute;
+	left: 190px;
+	top:140px;
+}
+
+
+
+.container{
+	position: relative;
+}
+
